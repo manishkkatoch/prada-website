@@ -14,9 +14,17 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@priyank-vaghela/gatsby-custom-theme-instagram": "0.0.5",
     "gatsby": "^2.19.7",
+    "gatsby-plugin-anchor-links": "^1.1.0",
+    "gatsby-plugin-sass": "^2.1.28",
+    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-transformer-sharp": "^2.3.14",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-modal": "^3.11.2"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

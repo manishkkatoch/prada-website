@@ -1,0 +1,114 @@
+{
+    "items":[
+        {
+            "id":"c_1",
+            "sold":false,
+            "title":"Born to be Wild",
+            "size": "52.6cm x 41.7cm",
+            "frame": "framed",
+            "medium": "Charcoal and Graphite"
+        },
+        {
+            "id":"c_2",
+            "sold":true,
+            "title":"Gaja",
+            "size": "72.4cm x 45.7cm",
+            "frame": "framed",
+            "medium": "Charcoal and Graphite",
+            "side": "wDetails"
+        },
+        {
+            "id":"c_3",
+            "sold":false,
+            "title":"Sun-Kissed",
+            "size": "44.4cm x 36.8cm",
+            "frame": "framed",
+            "medium": "Charcoal and Graphite",
+            "side": "wDetails"
+        },
+        {
+            "id":"c_4",
+            "sold":false,
+            "title":"Portrait",
+            "size": "22.8cm x 30.5cm",
+            "frame": "framed",
+            "medium": "Charcoal and Graphite"
+        },
+        {
+            "id":"c_5",
+            "sold":false,
+            "title":"Older and Wiser",
+            "size": "33cm x 49.5cm",
+            "frame": "framed",
+            "medium": "Charcoal and Graphite"
+        },
+        {
+            "id":"w_1",
+            "sold":false,
+            "title":"Dahlia",
+            "size": "30.5cm x 45.7cm",
+            "frame": "unframed",
+            "medium": "Watercolor",
+            "side": "wDetails"
+        },
+        {
+            "id":"w_2",
+            "sold":false,
+            "title":"Lotus",
+            "size": "21cm x 29.7cm",
+            "frame": "unframed",
+            "medium": "Watercolor",
+            "side": "wDetails"
+        },
+        {
+            "id":"w_3",
+            "title":"Poinsettia",
+            "sold":false,
+            "size": "30.5cm x 45.7cm",
+            "frame": "unframed",
+            "medium": "Watercolor"
+        },
+        {
+            "id":"w_4",
+            "sold":false,
+            "title":"Yellow Rose",
+            "size": "21cm x 29.7cm",
+            "frame": "unframed",
+            "medium": "Watercolor"
+        },
+        {
+            "id":"w_5",
+            "sold":true,
+            "title":"Roses",
+            "size": "29.7cm x 42cm",
+            "frame": "unframed",
+            "medium": "Watercolor",
+            "side": "wDetails"
+        },
+        {
+            "id":"w_6",
+            "sold":true,
+            "title":"Pink Roses",
+            "size": "21cm x 29.7cm",
+            "frame": "unframed",
+            "medium": "Watercolor"
+        },
+        {
+            "id":"w_7",
+            "sold":false,
+            "title":"Vishu Flower",
+            "size": "45.7cm x 30.5cm",
+            "frame": "unframed",
+            "medium": "Watercolor"
+        },
+        {
+            "id":"w_8",
+            "sold": false,
+            "title":"Maple Leaf",
+            "size": "45.5cm x 61cm",
+            "frame": "unframed",
+            "medium": "Watercolor",
+            "side": "wDetails"
+        }
+    ]
+}

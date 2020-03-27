@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Shadows+Into+Light&display=swap');
+$page-margin: 5rem;
+$section-margin: 4rem;
+
+html {
+	body {
+		margin: 0;
+		padding: 0;
+		* {
+			font-family: "Open Sans", sans-serif;
+		}
+	}
+}
+
+.body-container {
+	margin: auto;
+	padding-bottom: 100px;
+	width:90%;
+
+	.header-container {
+		
+		display: flex;
+		flex-direction: row;
+
+		h1 {
+			flex-grow: 1;
+			font-family: "Shadows Into Light", cursive;
+			font-size: xx-large;
+			display: flex;
+		}
+
+		ul.menu {
+			flex-grow: 4;
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			flex-wrap: wrap;
+			align-items: center;
+			right: 0;
+			
+			a,
+			svg {
+				font-family: 'Open Sans', sans-serif;
+				display: block;
+				font-size: medium;
+				text-transform: uppercase;
+				text-decoration: none;
+				text-align: right;
+				padding: 10px 8px;
+				margin: 5px;
+				color: black;
+				font-weight: 600;
+				@media screen and (max-width: 800px) {
+					display: none;
+				}
+				&:hover {
+					background: #c90808;
+					color: white;
+				}
+				transition: display 3s ease-in-out;
+			}
+
+			
+			.option.visible {
+				display: block;
+				width: 50%;
+				background-color: black;
+				margin:0;
+				padding: 15px 13px;
+				color: white;
+				&:hover {
+					background: #c90808;
+					color: white;
+				}
+				@media (max-width: 375px),(max-width: 360px) {
+					font-size: small;
+				}
+				border: solid 2px black;
+				
+			}
+			
+			.menu-mobile {
+				margin: 0;
+				border: solid 2px black;
+				&:hover {
+					background-color: black;
+					color: white
+				}
+				@media screen and (max-width: 800px) {
+					display: block;
+				}
+				@media screen and (min-width: 800px) {
+					display: none;
+				}
+				@media (max-width: 375px),(max-width: 360px) {
+					font-size: small;
+				}
+			}
+			.menu-mobile.visible {
+				background: black;
+				color: white;
+			}
+		}
+
+		
+
+
+		
+	}
+}
+
+section {
+	
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 300;
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
+	margin: auto;
+	@media (min-width: 1300px) {
+		width: 1260px;
+	}
+}
+
+input.primary-button {
+	padding: 10px 12px;
+	text-transform: uppercase;
+	flex-grow: 0;
+	color: white;
+	font-size: large;
+	border: none;
+	justify-content: flex-end;
+	text-align: center;
+	margin: 0.2rem;
+	background: linear-gradient(to right, #c90808 50%, black 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all 1s ease-in;
+
+	&:hover {
+		background-position: left bottom;
+		color: white;
+		cursor: pointer;
+	}
+}
+
+.work-showcase {
+	.gallery {
+		display: flex;
+		overflow: hidden;
+
+		.photo {
+			flex-grow: 1;
+			width: 50%;
+			height: 650px;
+			margin: auto 2px;
+			overflow: hidden;
+			div {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+
+			.overlay {
+				position: relative;
+				top: -120%;
+				height: 120%;
+				opacity: 0.5;
+				
+				&:hover {
+					background: rgb(131,58,180);
+					background: linear-gradient(184deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+					
+					a {
+						background-color: black;
+				border-color: black;
+					}
+				}
+			}
+			a {
+				text-align: center;
+				left: 35%;
+				position: relative;
+				top: -175%;
+				text-decoration: white;
+				border: solid 1px white;
+				padding: 10px 20px;
+				text-transform: uppercase;
+				color: white;
+				font-weight: 100;
+				font-family: "Open Sans";
+				font-size: xx-large;
+				opacity: 1;
+				color:white;
+			}
+			a:hover{
+				background-color: black;
+				border-color: black;
+			}
+		}
+	}
+}
+
+.image-grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width:100%;
+	margin:auto;
+	padding:0;
+}
+
+// 	.photo {
+// 		object-fit: fill;
+		
+// 		@media (min-width: 300px) and (max-width: 650px) {
+// 			margin: auto;	
+// 			width:300px;
+// 			height: 300px;
+// 		}
+// 		@media (min-width:1260px) {
+// 			margin: 0;
+// 			width:400px;
+// 			height: 400px;	
+// 		}
+
+// 		.gatsby-image-wrapper {
+// 			@media (min-width: 300px) and (max-width: 650px) {
+// 				margin: auto;	
+// 				width:300px !important;
+// 				height: 300px !important;
+// 			}
+// 		}
+
+// 		border: solid 10px white;
+// 		transition: transform .2s ease-in-out;
+
+// 		.sold-tag{
+// 			width: 10%;
+// 			position: relative;
+// 			float: right;
+// 			top: -20px;
+// 			z-index: inherit;
+// 		}
+// 		&:hover {
+// 			cursor: pointer;
+// 			z-index: 2;
+// 			transform: scale(1.2,1.2);
+// 		}
+// 	}
+// 	.photo.selected 
+// 		{
+// 			cursor: normal;
+// 			z-index: 0;
+// 			transform: scale(1,1);
+// 		}
+	
+// }
+
+.ReactModal__Content--after-open {
+	z-index: 5;
+	width: 70%;
+	margin: auto;
+	//inset:20px !important;
+	border-radius: 0px !important;
+	border: none !important;
+	padding: 0px !important;
+	overflow: hidden !important;
+}
+.ReactModal__Overlay--after-open {
+	background-color: rgba(0, 0, 0, 0.75) !important;
+	align-items: center;
+	inset: 0;
+}
+.ReactModal__Body--open {
+	overflow-y: hidden;
+  }
+div.details-pane {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	height: 100%;
+	width: auto;
+	overflow: hidden;
+	margin: 40px;
+	div {
+		text-align: center;
+		align-items: flex-end;
+		width: 100%;
+		color: black;
+
+			p.title {
+				font-size: xx-large;
+				text-transform: uppercase;
+				text-align: center;
+			}
+		p {
+			color: black;
+		}
+		
+	}
+}
+
+footer {
+	padding: 10px;
+	text-align: center;
+	p {
+		color: gray;
+	}
+}
+
+ul.props {
+	display: inline-block;
+	margin:0;
+	padding: 0;
+	li {
+		display: inline-block;
+		padding-right: 10px;
+
+		&:before {
+			margin-right: 10px;
+			content:"●"
+		}	
+	}
+}

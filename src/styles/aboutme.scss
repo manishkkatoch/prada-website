@@ -1,0 +1,71 @@
+@import "./base.scss";
+
+.about-me {
+    .container{
+        
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @media (min-width: 800px) {
+            flex-wrap: wrap;
+            width: 90%;
+        }
+
+        @media (min-width: 1260px) {
+            flex-wrap: nowrap;    
+            width: 1260px;
+        }
+
+        
+        .text {
+            padding: 3em;
+            text-align: justify;
+            
+            font-weight: 300;
+            align-self: center;
+            display: block;
+
+            p {
+                &:first-child {
+                    font-weight: 700;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) {
+                font-size: x-large;
+            }
+            @media only screen and (max-width: 900px) {
+                font-size: large;
+            }
+            @media only screen and (min-width:400px) and (max-width: 600px) {
+                font-size: medium;
+            }
+            @media only screen and (max-width: 400px) {
+                font-size: x-small;
+            }
+            
+          
+        }
+
+        .image {
+            align-items: center;
+            margin: auto;
+            @media (min-width: 700px), (min-width: 300px) {
+                width: 80%;
+                div.gatsby-image-wrapper {
+                    display: block !important;
+                    width:unset !important;
+                }
+                height: 500px;
+            }
+            @media (min-width: 1200px) {
+                width: 120%;
+                height: 500px;
+                padding-top:5em;
+            }
+    
+        }
+    }
+}

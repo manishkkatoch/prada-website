@@ -1,0 +1,63 @@
+@import "./base.scss";
+
+#contact {
+    div.container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        div.greeting {
+            text-align: justify;
+            font-weight: 300;
+            align-content: center;
+            p {
+                margin: 2em;
+            }
+            @media only screen and (min-width: 1200px) {
+                font-size: x-large;
+                width: 50%;
+            }
+            @media only screen and (max-width: 900px) {
+                font-size: large;
+                width: 50%;
+            }
+            @media only screen and (min-width:400px) and (max-width: 600px) {
+                font-size: medium;
+                width: 100%;
+            }
+            @media only screen and (max-width: 400px) {
+                font-size: x-small;
+                width: 100%;
+            }
+            
+            font-weight: 300;
+        }
+        div.form {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            @media only screen and (min-width: 300px) and (max-width: 600px) {
+                width: 100%;
+            }
+            @media only screen and (min-width: 600px) {
+                width: 50%;
+            }
+            input[type=text],
+            textarea {
+                border: 1.5px black solid;
+                font-size: large;
+                padding: 0.8rem;
+                margin: 0.2rem;
+                flex-grow: 1;
+            }
+            
+            input[type=submit] {
+                width: 200px;
+            }
+        }
+    }
+}
+
