@@ -18,7 +18,7 @@
     "gatsby": "^2.19.7",
     "gatsby-plugin-anchor-links": "^1.1.0",
     "gatsby-plugin-sass": "^2.1.28",
-    "gatsby-plugin-sharp": "^2.4.5",
+    "gatsby-plugin-sharp": "^4.25.1",
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-sharp": "^2.3.14",
     "node-sass": "^4.13.1",
