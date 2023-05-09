@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@priyank-vaghela/gatsby-custom-theme-instagram": "0.0.5",
-    "gatsby": "^2.19.7",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-anchor-links": "^1.1.0",
     "gatsby-plugin-sass": "^2.1.28",
     "gatsby-plugin-sharp": "^2.4.5",
